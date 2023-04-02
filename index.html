@@ -31,7 +31,7 @@
             <h2>Dronebag is a custom-made app designed for drone enthusiasts. With Dronebag, you can easily create drone groups and add drones to them, making it easy to keep track of your drone fleet</h2>
             <h3>This site is under construction</h3>
             <h4>For more detail please contact me at tom.cohen99@gmail.com</h4>
-            <a href="#" class="btn btn-lg btn-red">Buy Tickets Now <span class="ti-arrow-right"></span></a>
+            <!-- <a href="#" class="btn btn-lg btn-red">Buy Tickets Now <span class="ti-arrow-right"></span></a> -->
 
           </div>
           <div class="col-md-5 hidden-xs">
@@ -53,8 +53,8 @@
       <div class="container-fluid footer">
         <div class="row contact">
           <div class="col-md-6 contact-form">
-            <h3 class="content-ct"><span class="ti-email"></span> Contact Form</h3>
-            <form class="form-horizontal" data-toggle="validator" role="form" id="contact-form">              
+            <h3 class="content-ct"><span class="ti-email"></span> Contact me at tom.cohen99@gmail.com</h3>
+            <!-- <form class="form-horizontal" data-toggle="validator" role="form" id="contact-form">              
                 <div class="form-group">
                 <label for="name" class="col-sm-3 control-label">Name<sup>*</sup></label>
                 <div class="col-sm-9">
@@ -84,7 +84,7 @@
                   <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Send <span class="ti-arrow-right"></span></button>
                 </div>
               </div>
-            </form>
+            </form> -->
           </div>
           <!-- <div class="col-md-4 col-md-offset-1 content-ct">
             <h3><span class="ti-twitter"></span> Twitter Feed</h3>
@@ -95,19 +95,13 @@
             <p>Lorem Ipsum is a <a href="#">#dummy</a> text used as a text filler in designs. This is just a dummy text. via <a href="#">@designerdada</a> </p>
           </div>
         </div> -->
-        <!-- <div class="row footer-credit">
+        <div class="row footer-credit">
           <div class="col-md-6 col-sm-6">
-            <p>&copy; 2015, <a href="http://www.designerdada.com">DesignerDada.com</a> | All rights reserved.</p>
+            <p>&copy; 2023, <a href="https://gemperc.github.io/">Tom Cohen dev</a> | All rights reserved.</p>
           </div>
-          <div class="col-md-6 col-sm-6"> 
-            <ul class="footer-menu">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms &amp; Condition</a></li>
-            </ul>
-          </div>
+
         </div>
-      </div> -->
+      </div>
       <!-- End: Footer -->
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -117,37 +111,6 @@
       <script src="js/jquery.easing.min.js"></script>
       <script src="js/scrolling-nav.js"></script>
       <script src="js/validator.js"></script>
-      <script>
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-        
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-        
-            const formData = new FormData();
-            formData.append("name", name);
-            formData.append("email", email);
-            formData.append("message", message);
-        
-            fetch("send_email.php", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(result => {
-                if (result === "success") {
-                    alert("Email successfully sent!");
-                } else {
-                    alert("Error sending email. Please try again.");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("Error sending email. Please try again.");
-            });
-        });
-        </script>
         
     </body>
     </html>
